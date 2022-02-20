@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GW2 Inventory Optimizer</title>
+</head>
+<body>
+<h3>Characters</h3>
+<ul>
+    {% for c in characters %}
+    <li>{{ c.name }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url "gw2inv_app:full_update" %}">Perform full update</a>
+</body>
+</html>
